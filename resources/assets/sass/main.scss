@@ -1,0 +1,25 @@
+// ========================================================================
+// SCSS > Main stylehseet
+// ========================================================================
+@import "global/variables";
+@import "global/mixins";
+
+// ----------------------------------
+// Vendors
+@import "components/_normalize";
+@import "components/bootstrap";
+@import "vendor/font-awesome";
+
+// ----------------------------------
+// Components
+@import "components/font-face";
+@import "components/helpers";
+@import "components/buttons";
+@import "components/forms";
+
+// ----------------------------------
+// Core
+@import "core/general";
+@import "core/content";
+@import "core/header";
+@import "core/footer";
