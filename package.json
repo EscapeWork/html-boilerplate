@@ -11,14 +11,21 @@
     "gulp-imagemin": "^3.0.3",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
-    "jquery": "^3.1.0",
+    "jquery": "^1.11.0",
     "jquery.inputmask": "^3.3.1",
     "laravel-elixir": "^6.0.0-9",
+    "laravel-elixir-browserify": "^0.8.1",
+    "laravel-elixir-browsersync-official": "^1.0.0",
     "laravel-elixir-livereload": "^1.1.6",
+    "laravel-elixir-rollup-official": "^1.1.0",
     "laravel-elixir-spritesmith": "^0.4.0",
     "laravel-elixir-vue": "^0.1.4",
     "laravel-elixir-webpack-official": "^1.0.2",
     "vue": "^2.*",
     "vue-resource": "^1.0.3"
+  },
+  "dependencies": {
+    "jquery.stellar": "^0.6.2",
+    "slick-carousel": "^1.6.0"
   }
 }
