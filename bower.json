@@ -1,10 +1,9 @@
 {
-    "name": "escape-laravel-bootstrap",
-
-    "dependencies": {
-        "jquery": "1.11.*",
-        "jquery.inputmask": "3.*",
-        "bootstrap-sass": "~3.3.5",
-        "font-awesome": "4.5.*"
-    }
+  "name": "escape-laravel-bootstrap",
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "font-awesome": "4.5.*",
+    "jquery": "1.11.*",
+    "jquery.inputmask": "3.*"
+  }
 }

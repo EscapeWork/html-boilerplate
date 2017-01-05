@@ -25,6 +25,7 @@
     "vue-resource": "^1.0.3"
   },
   "dependencies": {
+    "gulp-tinypng": "^1.0.2",
     "jquery.stellar": "^0.6.2",
     "slick-carousel": "^1.6.0"
   }
