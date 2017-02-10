@@ -1,6 +1,5 @@
 // -------------------------------------------------------
 // jquery and bootstrap (and other vendors)
-window._ = require('lodash');
 window.$ = window.jQuery = require('jquery');
 require('bootstrap-sass/assets/javascripts/bootstrap/modal.js');
 
