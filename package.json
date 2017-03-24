@@ -1,32 +1,28 @@
 {
   "private": true,
   "scripts": {
-    "prod": "gulp --production",
-    "dev": "gulp watch"
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
+    "bootstrap-select": "^1.11.0",
     "gulp": "^3.9.1",
     "gulp-favicons": "^2.2.6",
     "gulp-imagemin": "^3.0.3",
+    "gulp-shell": "^0.6.2",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
-    "jquery": "^1.11.0",
+    "jquery": "^3.1.0",
     "jquery.inputmask": "^3.3.1",
-    "laravel-elixir": "^6.0.0-9",
-    "laravel-elixir-browserify": "^0.8.1",
-    "laravel-elixir-browsersync-official": "^1.0.0",
-    "laravel-elixir-livereload": "^1.1.6",
-    "laravel-elixir-rollup-official": "^1.1.0",
-    "laravel-elixir-spritesmith": "^0.4.0",
-    "laravel-elixir-vue": "^0.1.4",
-    "laravel-elixir-webpack-official": "^1.0.2",
+    "laravel-mix": "^0.8.0",
     "vue": "^2.*",
-    "vue-resource": "^1.0.3"
+    "vue-resource": "^1.0.3",
+    "webpack-livereload-plugin": "^0.10.0"
   },
   "dependencies": {
-    "gulp-tinypng": "^1.0.2",
-    "jquery.stellar": "^0.6.2",
-    "slick-carousel": "^1.6.0"
+    "swiper": "^3.4.1"
   }
 }
