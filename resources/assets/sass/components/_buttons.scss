@@ -4,22 +4,29 @@
 
 .btn {
     display: inline-block;
-    padding: .7em 1em;
-    font-size: 14px;
-    @include gradient-vertical(#e1e1e1, #ccc);
-    color: #333;
+    padding: 1em 1.3em;
+    font-size: 13px;
+    color: #fff;
     border: none;
     text-decoration: none;
-    @include border-radius(8px);
-    @include transition(.2s linear);
+    border-radius: 8px;
+    transition: .2s linear;
 
-    &:hover {
-        @include gradient-vertical(darken(#e1e1e1, 5%), darken(#ccc, 5%));
-        @include transition(.2s linear);
+    &:hover, &:focus {
+        color: #fff;
+        text-decoration: none;
     }
 
     &[disabled] {
         cursor: default;
         @include opacity(.6);
+    }
+}
+
+.btn-primary {
+    background: #5a9bc5;
+
+    &:hover, &:focus {
+        background: darken(#5a9bc5, 10%);
     }
 }
