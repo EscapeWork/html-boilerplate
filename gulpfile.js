@@ -2,13 +2,8 @@ const gulp        = require('gulp'),
       gutil       = require('gulp-util'),
       uglify      = require('gulp-uglify'),
       favicons    = require('gulp-favicons'),
-      shell       = require('gulp-shell');
-
-gulp.task('imagemin', function() {
-    gulp.src('public/assets/images/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('public/assets/images'));
-});
+      shell       = require('gulp-shell'),
+      tingpng     = require('gulp-tingpng');
 
 gulp.task('favicons', function() {
     gulp.src('public/assets/images/icons/favicon.png')
@@ -33,3 +28,9 @@ gulp.task('watch', shell.task([
 gulp.task('production', shell.task([
     'npm run production'
 ]));
+
+gulp.task('tinypng', function () {
+    gulp.src(['assets/images/**/*.png', '!assets/images/icons/*.png'])
+        .pipe(tingpng('OmkME2nyIucvXSZ8kwUWC8uyEJ6nZ6FV'))
+        .pipe(gulp.dest('assets/images'));
+});
