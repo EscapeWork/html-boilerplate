@@ -21,7 +21,7 @@
     "gulp-util": "^3.0.7",
     "jquery": "^3.1.0",
     "jquery.inputmask": "^3.3.1",
-    "laravel-mix": "^0.*",
+    "laravel-mix": "0.*",
     "vue": "^2.*",
     "vue-resource": "^1.0.3",
     "webpack-livereload-plugin": "^0.10.0"
