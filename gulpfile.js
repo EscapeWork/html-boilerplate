@@ -3,10 +3,10 @@ const gulp        = require('gulp'),
       uglify      = require('gulp-uglify'),
       favicons    = require('gulp-favicons'),
       shell       = require('gulp-shell'),
-      tingpng     = require('gulp-tingpng');
+      tingpng     = require('gulp-tinypng');
 
 gulp.task('favicons', function() {
-    gulp.src('public/assets/images/icons/favicon.png')
+    gulp.src('assets/images/icons/favicon.png')
         .pipe(favicons({
             background: '#fff',
             path: '/assets/images/icons',
@@ -14,7 +14,7 @@ gulp.task('favicons', function() {
             replace: true
         }))
         .on('error', gutil.log)
-        .pipe(gulp.dest('public/assets/images/icons'));
+        .pipe(gulp.dest('assets/images/icons'));
 });
 
 gulp.task('default', shell.task([
