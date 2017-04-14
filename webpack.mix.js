@@ -44,10 +44,10 @@ mix.options({
 //   postCss: [] // Post-CSS options: https://github.com/postcss/postcss/blob/master/docs/plugins.md
 // });
 
-var LiveReloadPlugin = require('webpack-livereload-plugin');
+// var LiveReloadPlugin = require('webpack-livereload-plugin');
 
-mix.webpackConfig({
-    plugins: [
-        new LiveReloadPlugin()
-    ]
-});
+// mix.webpackConfig({
+//     plugins: [
+//         new LiveReloadPlugin()
+//     ]
+// });
